@@ -11,11 +11,11 @@ class ViewBuilding extends React.Component {
        for (var i = 0; i < data.length; i++) {
            if (data[i].name === directory.name) {
                data.splice(i, 1);
-               console.log("Deleted");
-               console.log(directory);
+               //console.log("Deleted");
+               //console.log(directory);
            }
        }
-       //this.props.updateData(data);
+       
     }
     
     render() {

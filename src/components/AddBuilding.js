@@ -45,14 +45,14 @@ class AddBuilding extends React.Component {
         //console.log(this.state.latitude)
     };
 
-    addBuilding(event) {
+    addBuilding(event, data) {
         event.preventDefault();
         
-        //var dir = data[data.length - 1];
-        //var newId = dir.id + 1;
+        var dir = data[data.length - 1];
+        var newId = dir.id + 1;
 
         let newDirectory = {
-            id: 1,
+            id: newId,
             code: this.state.code,
             name: this.state.name,
             coordinates: {
@@ -62,16 +62,19 @@ class AddBuilding extends React.Component {
             address: this.state.address
         }
         console.log(newDirectory)
+        console.log(data);
+        data.push(newDirectory);
 
     }
 
 
     
     render() {
+        const { data } = this.props;
         
         return (
             <form
-                onSubmit={this.addBuilding}
+                onSubmit={(e) => { this.addBuilding (e,data)}}
             >
                 <h1> New Directory
                 </h1>
