@@ -32,7 +32,7 @@ class App extends React.Component {
       this.setState({
           selectedBuilding: id
       })
-      //console.log(this.state.selectedBuilding)
+      console.log(this.state.selectedBuilding)
   }
 
   render() {
@@ -70,6 +70,7 @@ class App extends React.Component {
                         <ViewBuilding
                             data={this.props.data}
                             selectedBuilding={this.state.selectedBuilding}
+                            updateData={this.updateData.bind(this)}
                         />
                     </div>
                     
