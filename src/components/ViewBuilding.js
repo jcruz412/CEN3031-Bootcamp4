@@ -5,9 +5,6 @@ class ViewBuilding extends React.Component {
     deleteBuilding(data, selectedBuilding) {
         
         data.splice(selectedBuilding, 1);
-
-
-        
     }
     
     render() {

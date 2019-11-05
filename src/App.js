@@ -3,7 +3,7 @@ import Search from './components/Search';
 import ViewBuilding from './components/ViewBuilding';
 import BuildingList from './components/BuildingList';
 import Credit from './components/Credit';
-//import AddBuilding from './components/AddBuilding';
+import AddBuilding from './components/AddBuilding';
 
 
 
@@ -63,6 +63,7 @@ class App extends React.Component {
                     filterText={this.state.filterText}
                   />
                 </table>
+                   
               </div>
             </div>
             <div className="column2">
@@ -72,9 +73,12 @@ class App extends React.Component {
                         />
                     </div>
                     
-            </div>
-                
-
+            </div> 
+                <AddBuilding
+                    data={this.props.data}
+                    selectedBuilding={this.state.selectedBuilding}
+                    updateData={this.updateData.bind(this)}
+                />
           <Credit />
         </main>
       </div>
