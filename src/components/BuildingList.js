@@ -2,7 +2,7 @@ import React from 'react';
 
 class BuildingList extends React.Component {
 	render() {
-        const { data, filterText, selectedUpdate } = this.props;
+        var { data, filterText, selectedUpdate } = this.props;
 
         
 

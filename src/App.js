@@ -14,6 +14,7 @@ class App extends React.Component {
       filterText: '',
       selectedBuilding: -5
     };
+
   }
 
   filterUpdate(value) {
@@ -40,8 +41,9 @@ class App extends React.Component {
     return (
       <div className="bg">
         <div className="row">
-          <h1>UF Directory App</h1>
-        </div>
+          
+            </div>
+            <h1>UF Directory App</h1>
             <Search
                 filterText={this.state.filterText}
                 filterUpdate={this.filterUpdate.bind(this)}
@@ -56,7 +58,7 @@ class App extends React.Component {
                       <b>Code Building</b>
                     </td>
                   </tr>
-                  <BuildingList
+                   <BuildingList className="BuildingList"
                     selectedUpdate={this.selectedUpdate.bind(this)}
                     updateData={this.updateData.bind(this)}
                     data={this.props.data}
@@ -70,7 +72,7 @@ class App extends React.Component {
                         <ViewBuilding
                             data={this.props.data}
                             selectedBuilding={this.state.selectedBuilding}
-                            updateData={this.updateData.bind(this)}
+                            updateData={this.updateData.bind(this)}f
                         />
                     </div>
                     

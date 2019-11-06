@@ -15,6 +15,8 @@ class ViewBuilding extends React.Component {
                //console.log(directory);
            }
        }
+
+       //this.props.updateData(data);
        
     }
     

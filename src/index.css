@@ -1,72 +1,93 @@
+
+
+
 body {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
+    margin-top: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
 }
 
 /* ##### general ##### */
 * {
-	box-sizing: border-box;
+    margin-top: 0;
+    box-sizing: border-box;
 }
 main {
-	padding: 0 2rem;
+    
+    padding: 0 2rem;
 }
 
 /* ##### Search ##### */
 header {
-	background: #3498db;
-	margin-bottom: 2rem;
+    
+    background: #3498db;
+    margin-bottom: 2rem;
 }
 
 input[type='text'] {
-	margin: 1rem;
-	background: #fff;
-	font-size: 1.3rem;
-	border: none;
-	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-	border-radius: 3px;
-	padding: 0 2rem;
-	width: calc(100% - 2rem);
-	height: 4rem;
+    margin: 1rem;
+    background: #fff;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: inset 0 0 3px rgba(99, 164, 255, 0.3);
+    border-radius: 3px;
+    padding: 0 2rem;
+    width: calc(100% - 2rem);
+    height: 4rem;
 }
 
 /* ##### NamesList ##### */
 tr {
-	padding: 0;
+    padding: 0;
+    
 }
 th {
-	position: left;
-	list-style: none;
-	padding: 0.25rem 0.75rem;
-	margin: 2px;
-	border-radius: 3px;
+    position: left;
+    list-style: none;
+    padding: 0.25rem 0.75rem;
+    margin: 2px;
+    border-radius: 3px;
+    
 }
 td:hover {
-	position: left;
-	cursor: pointer;
-	background-color: #ddd;
+    position: left;
+    cursor: pointer;
+    background-color: #ffcb52;
 }
 
 /* ##### Columns ##### */
 .column1 {
-	float: left;
-	width: 50%;
-	padding: 10px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
 }
 .column2 {
-	float: left;
-	width: 50%;
-	padding: 20px;
-	background-color: #ccdef9;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    background-color: #ffcb52;
 }
+
+.BuildingList {
+    background-color: #fff;
+}
+
+.bg {
+    margin: 0;
+    background-color: #a8ccff;
+}
+
+
 
 /* ##### Rows ##### */
 .row {
-	margin: 1rem;
+    margin: 1rem;
+    background-color: #a8ccff;
 }
 
 .row:after {
-	padding: 1 0rem;
+	padding: 0rem;
 	content: '';
 	display: table;
 	clear: both;
@@ -80,23 +101,23 @@ td:hover {
 
 /* ##### Footer ##### */
 .credit {
-	padding: 1rem 0;
-	color: #b3b3b3;
+    padding: 1rem 0;
+    color: #63a4ff;
 }
-.credit a {
-	color: #3498bb;
-}
+    .credit a {
+        color: #63a4ff;
+    }
 button {
-	background: #d7d7d7;
-	color: #3b3b3b;
-	padding: 0.6rem 1rem;
-	font-size: 0.8rem;
-	border: solid 1px #c7c7c7;
-	margin: 1rem 0;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-	border-radius: 3px;
-	outline: none;
+    background: #d7d7d7;
+    color: #3b3b3b;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    border: solid 1px #c7c7c7;
+    margin: 1rem 0;
+    box-shadow: 0 3px 10px rgba(41, 74, 240, 0.1);
+    border-radius: 3px;
+    outline: none;
 }
-button:hover {
-	background: #ddd;
-}
+    button:hover {
+        background: #ffb921;
+    }
