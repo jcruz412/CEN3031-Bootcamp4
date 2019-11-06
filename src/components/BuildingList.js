@@ -2,7 +2,7 @@ import React from 'react';
 
 class BuildingList extends React.Component {
 	render() {
-        const { data, filterText, selectedUpdate } = this.props;
+        var { data, filterText, selectedUpdate } = this.props;
 
         
 
@@ -12,7 +12,7 @@ class BuildingList extends React.Component {
             })
             .map(directory => {
                 return (
-                    <button type="button">Delete</button>,
+                    //<button type="button">Delete</button>,
                     <tr key={directory.id}>
                         <td>{directory.code} </td>
                         <td onClick={() => selectedUpdate(directory.id)}>  {directory.name} </td>
